@@ -27,7 +27,7 @@ def text_to_vector(text):
 #declare some sentences
 text1 = 'This is a foo bar sentence .'
 text2 = 'This sentence is similar to a foo bar sentence .'
-text3 = 'have fun figuring this out! mwahaha'
+text3 = 'A string that should not be close to the others!'
 
 #call text to vector
 vector1 = text_to_vector(text1)
@@ -48,5 +48,10 @@ angle_in_radians = math.acos(cosine2)
 degrees2 =  math.degrees(angle_in_radians)
 
 #return a similarity percentage estimate
-print "the cosine similarity percentage of string 1 and 2 is " + str(90 - degrees1) + " %"
-print "the cosine similarity percentage of string 1 and 3 is " + str(90 - degrees2) + " %"
+print "String 1 is:   " + text1
+print "String 2 is:  " + text2
+print "String 3 is:  " + text3
+print "the cosine similarity percentage of string 1 and 2 is " + str(degrees1)
+
+
+print "the cosine similarity percentage of string 1 and 3 is " + str(degrees2)
